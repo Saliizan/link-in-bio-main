@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ManvaHaiku - Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preload" href="./images/bg01.jpg" as="image" />
+    <link rel="shortcut icon" href="./images/manvahaiku.jpg" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.0,
+        color1:0xfaf3f3,
+        color2:0xd1ff ,
+        wingSpan: 30.00,
+        separation: 20.00,
+        alignment: 20.00,
+        cohesion: 20.00,
+        quantity: 5.00
+      })
+
+
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
+    })
+    </script>
+
+    
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <main class="animated">
+      <header>
+        <img src="./images/manvahaiku.jpg" />
+        <h1>@ManVaHaiku</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://telegram.me/manvahaiku">
+            <img src="./images/Telegram.svg" alt="Homepage" width="20" />
+            Telegram  
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/manvahaiku/">
+            <img src="./images/Instagram.svg" alt="YouTube" width="20" />
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/manvahaiku">
+            <img src="./images/Twitter.svg" alt="Twitter" width="20" />
+            Twitter
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
